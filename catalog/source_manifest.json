@@ -1,0 +1,39 @@
+{
+  "review_date": "2026-09-21",
+  "local_sources": [
+    {
+      "path": "RCA\\01_Cot_loi_5G_NFV_MANO_AN_Fault_Change_v2_PL03.docx",
+      "sha256": "0fdeb446d4b8ae7d1c4410e66cc9677de7bacf24da441bdf35bd6d606311d12f"
+    },
+    {
+      "path": "RCA\\02_De_xuat_Benchmark_RCA_Stat_ML_DL_Lifecycle_v2_PL03.docx",
+      "sha256": "9d0e1f5700bb42237b0de07b3fc1a55dd7a72dd25198e234d7e6e0063f169b49"
+    },
+    {
+      "path": "RCA\\PL03.0_20260202_Thiet ke chi tiet phan he MANO he thong vOCS4.0.docx",
+      "sha256": "c6f5b997cd17c4b2086ce84f161b455ff365d552eaffdafc4bdf49bc1eee8d7c"
+    },
+    {
+      "path": "structure_mau.txt",
+      "sha256": "37fe926b699b0ac7ae44a0b52ae38f5088edbd2f978804ee29826058f86631af"
+    },
+    {
+      "path": "Telecom_Abnormal_Detection_MLOps_Reference_Architecture.ipynb",
+      "sha256": "1f4a55dd8feb0b022c84049d8522241b6415d2bccd96eb6e97757d11923c08c1"
+    }
+  ],
+  "upstream": {
+    "repo": "https://github.com/phamquiluan/RCAEval",
+    "sha": "bb48c5aa9a24f1d5fcc716bdd479ea2d63145c90",
+    "commit_date": "2026-09-06T12:04:02Z",
+    "files": {
+      "LICENSE": "9f2c6bb71f29569d5547e52b207bdf10743fbc1943fbe3b5ae200041f3d787e6",
+      "RCAEval__benchmark__evaluation.py": "affc34af736ff6d7f847d35a1faed020166631a8858ca75816d71a277b667752",
+      "RCAEval__e2e__baro.py": "bdccf114baf3e9a8554d1b9b07997736fa374af18412d3ab367e2ea0f32ba1e6",
+      "RCAEval__utility____init__.py": "4d48e6b38cec5d249895d3c08845f97cda97cfc87acde99b5280f1c007158760",
+      "README.md": "3feb2831b49fef48364338a3202141b4206154b3bf59873263faf5f08ef9a1b0",
+      "revision.json": "bfbc60f2dd679d7751a7b2ade6a13b7abe37a3fe7b85a29c1fde3e20047b0c79"
+    }
+  },
+  "method": "DOCX XML paragraph/table text extraction and direct source-code review; no original DOCX visual QA"
+}

@@ -1,0 +1,66 @@
+{
+  "algorithm": "dl_autoencoder",
+  "task": "candidate entity ranking",
+  "dataset_hash": "2f4f290521115f57c1f15d7014d7e9ab131efe2c56253626dd4cfc86039ded88",
+  "feature_names": [
+    "log_error_burst",
+    "log_error_rate",
+    "log_new_template",
+    "log_missing"
+  ],
+  "selected": {
+    "index": 0,
+    "params": {
+      "hidden": [
+        16,
+        4,
+        16
+      ],
+      "lr": 0.005,
+      "epochs": 180
+    },
+    "seeds": [
+      {
+        "seed": 42,
+        "path": "models\\dl_autoencoder-c0-s42.json",
+        "validation_mrr": 1.0,
+        "threshold": 4.044929555448081,
+        "fit_seconds": 0.21834920000037528
+      },
+      {
+        "seed": 123,
+        "path": "models\\dl_autoencoder-c0-s123.json",
+        "validation_mrr": 1.0,
+        "threshold": 3.9720925531026516,
+        "fit_seconds": 0.2406330000003436
+      },
+      {
+        "seed": 2026,
+        "path": "models\\dl_autoencoder-c0-s2026.json",
+        "validation_mrr": 1.0,
+        "threshold": 4.844765112893228,
+        "fit_seconds": 0.19928650000019843
+      }
+    ],
+    "validation_mrr": 1.0
+  },
+  "intended_use": "offline/shadow support",
+  "limitations": [
+    "ranking is not causal proof",
+    "statistical/unsupervised models rank abnormal entities, which can be downstream symptoms",
+    "evidence is supporting telemetry, not a neural attribution or calibrated causal probability"
+  ],
+  "lifecycle": {
+    "checks": {
+      "hit3": true,
+      "mrr": true,
+      "candidate_coverage": true,
+      "latency": true,
+      "evidence": true,
+      "failures": true
+    },
+    "decision": "DEMO_ONLY",
+    "production_allowed": false,
+    "reason": "Offline gates do not authorize production promotion"
+  }
+}

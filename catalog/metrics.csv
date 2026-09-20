@@ -1,0 +1,7 @@
+﻿metric,unit,implemented,limitation
+"Hit/Recall@1,3,5; MRR; MAP; NDCG@5; Avg@5",incident,yes,entity ranking only
+Chance Avg@5; Lift Avg@5,fixed candidate universe,yes,uniform random rank reference
+Precision/Recall/F1/AP,sampled window,yes,normal validation controls required
+p50/p95/p99,milliseconds,yes,scoring and sorting only; profiler enabled
+CPU/wall time; Python traced memory,seconds/bytes,yes,not total native RSS or GPU
+False alarms/hour; delay; MTTR,continuous event / operations,no,requires continuous replay and human outcomes

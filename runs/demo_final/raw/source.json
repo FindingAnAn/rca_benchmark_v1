@@ -1,0 +1,5 @@
+{
+  "kind": "synthetic",
+  "seed": 42,
+  "warning": "Integration demo only; not production or RCAEval performance"
+}

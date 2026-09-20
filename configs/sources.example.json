@@ -1,0 +1,26 @@
+{
+  "dataset_version": "internal-gold-0.1.0",
+  "pre_seconds": 3600,
+  "step_seconds": 60,
+  "victoriametrics": {
+    "query_range_url": "https://VM_HOST/select/TENANT/prometheus/api/v1/query_range",
+    "authorization_env": "VM_AUTHORIZATION",
+    "entity_label": "entity_id",
+    "chunk_seconds": 1800,
+    "timeout_seconds": 30,
+    "queries": [
+      {"name": "cpu_usage", "promql": "avg by (entity_id) (rate(container_cpu_usage_seconds_total{namespace=\"YOUR_NAMESPACE\"}[5m]))", "kind": "rate"},
+      {"name": "memory_bytes", "promql": "sum by (entity_id) (container_memory_working_set_bytes{namespace=\"YOUR_NAMESPACE\"})", "kind": "gauge"}
+    ]
+  },
+  "elasticsearch": {
+    "base_url": "https://ES_HOST:9200",
+    "index": "YOUR_LOG_INDEX-*",
+    "authorization_env": "ES_AUTHORIZATION",
+    "timeout_seconds": 30,
+    "page_size": 1000,
+    "max_pages": 1000,
+    "filter": {"term": {"namespace.keyword": "YOUR_NAMESPACE"}},
+    "fields": {"timestamp": "@timestamp", "entity_id": "entity_id", "level": "log.level", "template_id": "event.code"}
+  }
+}

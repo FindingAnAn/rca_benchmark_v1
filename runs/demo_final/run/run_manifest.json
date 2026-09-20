@@ -1,0 +1,218 @@
+{
+  "run_id": "run",
+  "status": "COMPLETED",
+  "created_at": "2026-09-20T17:27:52.965479+00:00",
+  "dataset_hash": "0d66f281bec6a7cf0e90828d8c35702e9d8fd1675b9cd963eb00fde03ec0a55e",
+  "raw_hash": "3cf24119938b81d5975206d364d6f604e880a5e3a47459d920113355261de734",
+  "synthetic": true,
+  "code_hash": "45286835702c9771f9286cd5f9181779fa444192d0502eb5c4c2975574853888",
+  "code_files": {
+    "adapters.py": "d223c959ab969d1d3cd210f07d3e80b41b32db80dc35fe959dd696ed622a8c17",
+    "cli.py": "2d9f8d80c7e3abfc2819bc8cfd4a358d081078cf351e8241331a3f4c2c61e766",
+    "connectors.py": "0bacccafa1e3a6edbc2e11439254aa4a8383c2cf0bb00c35b9691b866549e1d4",
+    "data.py": "17baf6fa03b3cf7f26dc028c30de7dfc5b3a3f149975d0974c6d548184e49324",
+    "evaluation.py": "418c6da8c5a5d1d36026bd0d45f99df6cbb92e39219b445e6644695cf1436ec9",
+    "io.py": "b88268bc56a7f060d0f8e13f677165afbc75a5ca57eff68d27d684fce74fd415",
+    "models.py": "55717c74950d66396a0dd31ad7e5ef6f4de940a447ea68ea6a3fcae92d912e2f",
+    "monitoring.py": "7d2fc28937b1479347f7b27fccefd4da46dbb1612de67fc0ab8301d64371c80d",
+    "registry.py": "4583479c0b28161dfbca93c7dd0ef9f45737243d7aa0d12c54930febc32cca5d",
+    "runner.py": "654d9ee919c36e2a08ef7a949e728f56cf9607eabd2b8350a5acc83e968dbbd6",
+    "synthetic.py": "17a96a04084cefefdaeda9014cb784eeee71c0e03e9f5ff5c5e5318a4dc6ad7c",
+    "__init__.py": "82f43d663dc196011a13e4561ef56e356790d5ee7bcb69cff969372a96157c5f",
+    "__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279"
+  },
+  "config_hash": "5502df869939a49aa17b73a1d3f6606139c5df6ed41555c6d0592f2f36385a97",
+  "config": {
+    "dataset_version": "telecom-synthetic-1.0.0",
+    "feature_version": "incident-candidate-v1",
+    "seed": 42,
+    "n_cases": 90,
+    "step_seconds": 60,
+    "pre_seconds": 3600,
+    "post_seconds": 600,
+    "train_fraction": 0.6,
+    "validation_fraction": 0.2,
+    "embargo_seconds": 60,
+    "min_metric_coverage": 0.7,
+    "label_tiers": [
+      "synthetic"
+    ],
+    "modalities": [
+      "metric",
+      "log",
+      "change",
+      "topology"
+    ],
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "bootstrap_samples": 300,
+    "algorithms": {
+      "stat_mad": [
+        {
+          "context_weight": 0.0
+        },
+        {
+          "context_weight": 0.3
+        }
+      ],
+      "stat_ewma": [
+        {
+          "context_weight": 0.0
+        },
+        {
+          "context_weight": 0.3
+        }
+      ],
+      "ml_logistic": [
+        {
+          "lr": 0.02,
+          "epochs": 250,
+          "l2": 0.001
+        },
+        {
+          "lr": 0.02,
+          "epochs": 250,
+          "l2": 0.03
+        }
+      ],
+      "ml_pca": [
+        {
+          "components": 2
+        },
+        {
+          "components": 4
+        }
+      ],
+      "dl_mlp": [
+        {
+          "hidden": [
+            16,
+            8
+          ],
+          "lr": 0.01,
+          "epochs": 180,
+          "l2": 0.001
+        },
+        {
+          "hidden": [
+            32,
+            16
+          ],
+          "lr": 0.005,
+          "epochs": 180,
+          "l2": 0.01
+        }
+      ],
+      "dl_autoencoder": [
+        {
+          "hidden": [
+            16,
+            4,
+            16
+          ],
+          "lr": 0.005,
+          "epochs": 180
+        },
+        {
+          "hidden": [
+            24,
+            8,
+            24
+          ],
+          "lr": 0.005,
+          "epochs": 180
+        }
+      ]
+    },
+    "gates": {
+      "min_hit3": 0.7,
+      "min_mrr": 0.5,
+      "max_p95_ms": 1000.0,
+      "min_evidence_coverage": 0.95
+    }
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "selection": "highest mean validation MRR across configured seeds; tie: first config",
+  "test_usage": "all algorithms evaluated once per selected config/seed; no refit on validation",
+  "finished_at": "2026-09-20T17:27:57.485611+00:00",
+  "resource": {
+    "wall_seconds": 4.412774399999762,
+    "cpu_seconds": 4.140625,
+    "python_traced_peak_bytes": 4022073,
+    "rss_peak_bytes": null,
+    "gpu_peak_bytes": null,
+    "note": "tracemalloc is Python allocator tracing; not total process/native/GPU memory"
+  },
+  "artifact_hashes": {
+    "leaderboard.csv": "eb1a682b4ea972f3f32576e65e73a07ff298d1fbc7600e684b77943f4df3ddfd",
+    "summary.json": "cd28e314b7dc875d2d4435fd42dec49c6642b279ecb62a1498260e623ab2de77",
+    "trials.csv": "0a3cd389cabcee45bbaa7b7c28670f112c9f4c2cc495ffbd0a5f69aaae76e3f9",
+    "models/dl_autoencoder-c0-s123.json": "5536563fa511770537b3f3c5702d5d395ba8bb750663d28169959ae1964833ef",
+    "models/dl_autoencoder-c0-s2026.json": "0b9e5fd31bd34b474122f8a4f4a0fe4d8797ef725a9f158e8a626da961fe7723",
+    "models/dl_autoencoder-c0-s42.json": "7fb2d8fea677702ec2d26158f61278a760bcc7feeb4076e49a0c4fa4ae889fee",
+    "models/dl_autoencoder-c1-s123.json": "379cc4bba69a1dd5a1a7a93496b8a6d95021ec4a01f9ca87ba88c55c841ec73d",
+    "models/dl_autoencoder-c1-s2026.json": "5eb57b9d9c3ee25e22d3fbcabb6ccc2e38fb0006ba865f55b2eae61142244dab",
+    "models/dl_autoencoder-c1-s42.json": "5ac3dce6c9f8c3e3dc51fd9369e21a9036fc959abc9671298690349c58b857c2",
+    "models/dl_mlp-c0-s123.json": "fa278e0c4fdf6b29f9e0000cb2d87c03c366587833ac9543bb276b6e36a96b55",
+    "models/dl_mlp-c0-s2026.json": "6c3da69551342377e48d4a95ddf53da861661719d2bc707924b4a3edb3f2145f",
+    "models/dl_mlp-c0-s42.json": "1df834bf74c69fd5d2ee95f068e970d2597ce431b61f7e7df5d8ef05e54f7e2e",
+    "models/dl_mlp-c1-s123.json": "af786e26ba1af9bbab799c4c4c64bdc56dfe7d1e3c6dcb469c7392d952b5e30c",
+    "models/dl_mlp-c1-s2026.json": "b6870813c9b6076d3c5ae9a8d37eeba3bf83f720fdf6f7b0499a95207155689c",
+    "models/dl_mlp-c1-s42.json": "0cebe92509cb48f310c5740ddf0e516b29f976217bc369f5ef93b9d5a2a77b0b",
+    "models/ml_logistic-c0-s123.json": "3848b5d4e9b14a5262d3ae91243d188f2127461b5802796e552f939d830c054d",
+    "models/ml_logistic-c0-s2026.json": "60f21744996bc7760b395cba8608537cc27eec1aef58750eddf227a8f4611a05",
+    "models/ml_logistic-c0-s42.json": "357522afefb195b58f3d74163bf929b329b1915446c9090ea9840fa6cac2a9e6",
+    "models/ml_logistic-c1-s123.json": "c5edb39634131471ddc6e24f7335167b2c2e8e563e69d8a2d1c5b8677be888f1",
+    "models/ml_logistic-c1-s2026.json": "31b28522687d9600ffb5650c88af3f10c987663072cb0d7d0fa7aef1b5bc18b8",
+    "models/ml_logistic-c1-s42.json": "3c90072e2778e50dbf93beae0da21d4268893cb9d29a552dba2637ebb1963b9c",
+    "models/ml_pca-c0-s123.json": "db5031d6f4409cd6cb47fd078bd4d827aa7ebb5f3c83baeab33443c5abe3042b",
+    "models/ml_pca-c0-s2026.json": "043ac0a17e2a4242d7c36ae9395ad9bfedba8d22b33bcb240785c3f4dbdc71f6",
+    "models/ml_pca-c0-s42.json": "0fd3ba62943e6526808a28d32cb4a93a8041d04c678b1e663537a8c4dbb95146",
+    "models/ml_pca-c1-s123.json": "4ffe9ca2d9809ecbe249cee017f074af904e999d8f805f12b0641c63e0ba1584",
+    "models/ml_pca-c1-s2026.json": "448ebc937b80b481c29fb8a713aa6aeca039483df500a9ad60ebb1cbcf6ea07f",
+    "models/ml_pca-c1-s42.json": "6fdf7ffcfbf430f256db29eb4330f6607bd2c7523967074ce3fa9d82117f6dcc",
+    "models/stat_ewma-c0-s123.json": "c966c29f8c5cd20d82742766b0bbbf6f5f3a68ed57cabccb3ee1c8dbd96e321b",
+    "models/stat_ewma-c0-s2026.json": "c9a678bf7ed7db203194c246d1feaa8d1896f06140567821317b48e5ebb61a8e",
+    "models/stat_ewma-c0-s42.json": "f68f23a278b11d7cadf2b4fd4132b77da0d9cda4556d26dbba96cd8c86a1dfdc",
+    "models/stat_ewma-c1-s123.json": "caf4f0f9258c1ee40cd22249efbfddd594403e60ac1e10363b7bc11edd5b21c1",
+    "models/stat_ewma-c1-s2026.json": "019378f4384fb434547b844307c2d6511efb8e4d994280f284689093054f4c0d",
+    "models/stat_ewma-c1-s42.json": "e3fdc10fcf90948d53346765986dcdde56ff1ba363c94e67a745b881d9f4645f",
+    "models/stat_mad-c0-s123.json": "50bbb558500ffb36d7f99c62f77411a15d6b52498ddf81cd337f8264cd8f11ad",
+    "models/stat_mad-c0-s2026.json": "d8c06666f733943991a6fee2603bd1cf35dfcf57ce418a5204c1f0aff376cae1",
+    "models/stat_mad-c0-s42.json": "d9c6c7a5df8dd0c6e5c8ada0a00e1518abcfb03e3a7fc9708044b0b6ea88ff48",
+    "models/stat_mad-c1-s123.json": "8e7678fce89c4fc450a0d00176cc2c94dc9ae1eb1b967b07f5365b609767c891",
+    "models/stat_mad-c1-s2026.json": "4aebfd1f6dfcceb3038cb7f696eafcc1d2809da1feea9808316bb8c0ede9b09c",
+    "models/stat_mad-c1-s42.json": "570b7abf82adfac8a592c485ea9940498278c13305262f818c0464cadd41fd9c",
+    "model_cards/dl_autoencoder.json": "1007625dfd14da1b4075a6419743f437637009d4c59fa742b8873ecc347b4ca6",
+    "model_cards/dl_mlp.json": "daea6a8c414775d1f65ef31a5b3f001a76dd0e9849d795b670d8c01beceeff72",
+    "model_cards/ml_logistic.json": "0b08dde02d92113168afa52af5c7dabe83c58ab0ec02f3bb65d10ba1a2a0ec37",
+    "model_cards/ml_pca.json": "f41f14095ecbbfbbb47f6699ba820b9c49c72f001083dd5bc8674c4b917ebd5b",
+    "model_cards/stat_ewma.json": "265ac51546531ffffdeaf9334513fedbc96832f06d1570b0402c0abb9137fd03",
+    "model_cards/stat_mad.json": "11267c315cc723c7911969d049960763980c65ea51107c68456269a9c6cde893",
+    "predictions/dl_autoencoder-s123.jsonl": "ebe0bfd507806dc60a959a6b24f08967bfe7bf0af8885d957c88a6f56a354379",
+    "predictions/dl_autoencoder-s2026.jsonl": "1ab04fd4cdae8e277cf1246fac2f06282d8e74803de9b9e55d99bbe2d65231de",
+    "predictions/dl_autoencoder-s42.jsonl": "8a6affe642c122c449b8b68728a282a3cbf75a2d2e6899f1685d957a0a44b353",
+    "predictions/dl_mlp-s123.jsonl": "c1c7b2a5bcc7102d321ec6165ff90fc1f0f9a8779e6cdb9000a3e3a5da5b6562",
+    "predictions/dl_mlp-s2026.jsonl": "fabd5b05ff5b07c7a9bbc687f71ea45c397387f15723491f98342f7bbf9c5b1d",
+    "predictions/dl_mlp-s42.jsonl": "7ca3c0a6d9121a438d1e53ca999360bbe160e2ff9b5b8ef120e97d49fc9b395a",
+    "predictions/ml_logistic-s123.jsonl": "3d5cb618522aae2e0eaed544f0ade9cecc639308a7fe2c15b2b0c6022d26a516",
+    "predictions/ml_logistic-s2026.jsonl": "c9689a15cc74bb63d441feb84faf5793ea377026e3f10d5d3b617d626ca8a023",
+    "predictions/ml_logistic-s42.jsonl": "0e6ef556f46f4f806069f095d886d23cb4874b7a1cb0e98d78647e227210c412",
+    "predictions/ml_pca-s123.jsonl": "eafce294d9c57c30b865db3e95eb887e918192be6783f7bec29d9325573cb5e6",
+    "predictions/ml_pca-s2026.jsonl": "0fcfe2760795803f0a38f2ea5bfb0acc7329fce10a0ad82916b5026fdae7ddca",
+    "predictions/ml_pca-s42.jsonl": "6654c2f0490a29ab4c7c81202e9adc672315943a2f00c173795ea061cdf2856b",
+    "predictions/stat_ewma-s123.jsonl": "ac10105078f1cc6175dd47ca86d4208cf461c61c167f06bb1848cf8477c23b05",
+    "predictions/stat_ewma-s2026.jsonl": "0ab8fc21dfad12760e9e32ac20c0d3d2c6fe5026a638026e828abb9c44a1efed",
+    "predictions/stat_ewma-s42.jsonl": "a247f153e074986918ae3f9b936717aeb6ee9b72fc5b2e2514aa5b0fdfe769b1",
+    "predictions/stat_mad-s123.jsonl": "039d571eaa7db50b22d0b4041ed565f8562394de7bd7886e03d09b11a86133a5",
+    "predictions/stat_mad-s2026.jsonl": "35b4a7f7053ad27a4b10aa1840b0dc53660d4fce9336432b53ef80140b452250",
+    "predictions/stat_mad-s42.jsonl": "c469c35750065149fd4e53ca2a3d6ea548094a69e08c0f1220bcdca8490762d4"
+  }
+}

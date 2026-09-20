@@ -1,0 +1,15 @@
+{
+  "name": "stat_mad",
+  "params": {
+    "context_weight": 0.0
+  },
+  "seed": 123,
+  "feature_names": [
+    "metric_max_abs_z",
+    "metric_mean_abs_z",
+    "metric_ewma_z",
+    "metric_missing"
+  ],
+  "loss_history": [],
+  "state": {}
+}

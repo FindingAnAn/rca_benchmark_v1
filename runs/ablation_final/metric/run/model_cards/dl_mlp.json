@@ -1,0 +1,66 @@
+{
+  "algorithm": "dl_mlp",
+  "task": "candidate entity ranking",
+  "dataset_hash": "4d653d0191ced6b036e3666610dce2729bd7638c6524d3c57208110ac43c6211",
+  "feature_names": [
+    "metric_max_abs_z",
+    "metric_mean_abs_z",
+    "metric_ewma_z",
+    "metric_missing"
+  ],
+  "selected": {
+    "index": 0,
+    "params": {
+      "hidden": [
+        16,
+        8
+      ],
+      "lr": 0.01,
+      "epochs": 180,
+      "l2": 0.001
+    },
+    "seeds": [
+      {
+        "seed": 42,
+        "path": "models\\dl_mlp-c0-s42.json",
+        "validation_mrr": 1.0,
+        "threshold": 0.7089077656035245,
+        "fit_seconds": 0.23001299999987168
+      },
+      {
+        "seed": 123,
+        "path": "models\\dl_mlp-c0-s123.json",
+        "validation_mrr": 1.0,
+        "threshold": 0.7409599662072746,
+        "fit_seconds": 0.2235200000000077
+      },
+      {
+        "seed": 2026,
+        "path": "models\\dl_mlp-c0-s2026.json",
+        "validation_mrr": 1.0,
+        "threshold": 0.7683495488824507,
+        "fit_seconds": 0.20116589999997814
+      }
+    ],
+    "validation_mrr": 1.0
+  },
+  "intended_use": "offline/shadow support",
+  "limitations": [
+    "ranking is not causal proof",
+    "statistical/unsupervised models rank abnormal entities, which can be downstream symptoms",
+    "evidence is supporting telemetry, not a neural attribution or calibrated causal probability"
+  ],
+  "lifecycle": {
+    "checks": {
+      "hit3": true,
+      "mrr": true,
+      "candidate_coverage": true,
+      "latency": true,
+      "evidence": true,
+      "failures": true
+    },
+    "decision": "DEMO_ONLY",
+    "production_allowed": false,
+    "reason": "Offline gates do not authorize production promotion"
+  }
+}

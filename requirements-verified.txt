@@ -1,0 +1,2 @@
+# Core runtime used for the shipped local demo (Python 3.12.14 on Windows).
+numpy==2.3.5

@@ -1,0 +1,71 @@
+{
+  "algorithm": "dl_autoencoder",
+  "task": "candidate entity ranking",
+  "dataset_hash": "0d66f281bec6a7cf0e90828d8c35702e9d8fd1675b9cd963eb00fde03ec0a55e",
+  "feature_names": [
+    "metric_max_abs_z",
+    "metric_mean_abs_z",
+    "metric_ewma_z",
+    "metric_missing",
+    "log_error_burst",
+    "log_error_rate",
+    "log_new_template",
+    "log_missing",
+    "recent_change",
+    "neighbor_evidence"
+  ],
+  "selected": {
+    "index": 1,
+    "params": {
+      "hidden": [
+        24,
+        8,
+        24
+      ],
+      "lr": 0.005,
+      "epochs": 180
+    },
+    "seeds": [
+      {
+        "seed": 42,
+        "path": "models\\dl_autoencoder-c1-s42.json",
+        "validation_mrr": 0.9285714285714286,
+        "threshold": 83.32659551047323,
+        "fit_seconds": 1.2251796000000468
+      },
+      {
+        "seed": 123,
+        "path": "models\\dl_autoencoder-c1-s123.json",
+        "validation_mrr": 0.9285714285714286,
+        "threshold": 85.12833514326174,
+        "fit_seconds": 1.2624611000001096
+      },
+      {
+        "seed": 2026,
+        "path": "models\\dl_autoencoder-c1-s2026.json",
+        "validation_mrr": 0.9285714285714286,
+        "threshold": 84.74365128607005,
+        "fit_seconds": 1.2531166999999641
+      }
+    ],
+    "validation_mrr": 0.9285714285714285
+  },
+  "intended_use": "offline/shadow support",
+  "limitations": [
+    "ranking is not causal proof",
+    "statistical/unsupervised models rank abnormal entities, which can be downstream symptoms",
+    "evidence is supporting telemetry, not a neural attribution or calibrated causal probability"
+  ],
+  "lifecycle": {
+    "checks": {
+      "hit3": true,
+      "mrr": true,
+      "latency": true,
+      "evidence": true,
+      "failures": true
+    },
+    "decision": "DEMO_ONLY",
+    "production_allowed": false,
+    "reason": "Offline gates do not authorize production promotion"
+  }
+}

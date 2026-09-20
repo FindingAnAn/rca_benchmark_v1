@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "sources": {
+    "metric": {
+      "input_rows": 101209,
+      "exact_duplicates": 0,
+      "accepted_rows": 101209
+    },
+    "log": {
+      "input_rows": 10493,
+      "exact_duplicates": 0,
+      "accepted_rows": 10493
+    },
+    "change": {
+      "input_rows": 128,
+      "exact_duplicates": 0,
+      "accepted_rows": 128
+    },
+    "topology": {
+      "input_rows": 720,
+      "exact_duplicates": 0,
+      "accepted_rows": 720
+    }
+  },
+  "n_cases": 90,
+  "candidate_label_coverage": 1.0
+}

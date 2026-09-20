@@ -1,0 +1,10 @@
+﻿algorithm,family,supervision,status,hyperparameters
+stat_mad,Statistical,case pre-window,implemented,context_weight
+stat_ewma,Statistical,case pre-window,implemented,context_weight; alpha fixed in feature v1
+ml_logistic,ML,supervised candidate label,implemented,"lr,epochs,l2"
+ml_pca,ML,normal-only,implemented,components
+dl_mlp,DL,supervised candidate label,implemented,"hidden,lr,epochs,l2"
+dl_autoencoder,DL,normal-only,implemented,"hidden,lr,epochs,l2"
+MDA Drools,Product baseline,operator rules,external prediction adapter,rule_version
+IF/LOF/RF/XGBoost,ML,method-dependent,survey only,trees/depth/neighbors
+LSTM/TCN/GNN,DL,method-dependent,survey only,sequence length/hidden/layers/edges

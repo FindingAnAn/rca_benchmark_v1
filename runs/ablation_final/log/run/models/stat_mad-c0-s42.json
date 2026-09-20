@@ -1,0 +1,15 @@
+{
+  "name": "stat_mad",
+  "params": {
+    "context_weight": 0.0
+  },
+  "seed": 42,
+  "feature_names": [
+    "log_error_burst",
+    "log_error_rate",
+    "log_new_template",
+    "log_missing"
+  ],
+  "loss_history": [],
+  "state": {}
+}

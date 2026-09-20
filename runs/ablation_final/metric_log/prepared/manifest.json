@@ -1,0 +1,26 @@
+{
+  "stage": "prepared",
+  "parent_hash": "3cf24119938b81d5975206d364d6f604e880a5e3a47459d920113355261de734",
+  "dataset_version": "telecom-synthetic-1.0.0",
+  "feature_version": "incident-candidate-v1",
+  "synthetic": true,
+  "feature_names": [
+    "metric_max_abs_z",
+    "metric_mean_abs_z",
+    "metric_ewma_z",
+    "metric_missing",
+    "log_error_burst",
+    "log_error_rate",
+    "log_new_template",
+    "log_missing"
+  ],
+  "files": {
+    "cases.jsonl": "6900292352f329facfae5f4b7e9c24ee2971f50097fa8e40a6ba35283c08d423",
+    "config.json": "ee4633009d8dcf8b4ae8d01abd4b20b79e93843d39c45044d9d128037f750af8",
+    "dq_report.json": "483fb60e77a9e9570bfbe8dcb371efbc954e0bf2f27bd731831b795ddd410905",
+    "features.jsonl": "66edeec7ac7b138966793025cf8ffead47102c5b7ad459f668afa82832d59ecd",
+    "splits.csv": "c0a2adf85a3fa0b7db51bb936f039cf8982e80bf5ea977bc9e06f57d2ab67188"
+  },
+  "content_hash": "69592397f1d1e2c8473b2e488838ca11d285dbdee3f86cbdf03f04f9ef2ca374",
+  "created_at": "2026-09-20T17:28:12.993195+00:00"
+}

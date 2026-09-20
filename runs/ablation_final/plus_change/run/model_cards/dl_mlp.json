@@ -1,0 +1,71 @@
+{
+  "algorithm": "dl_mlp",
+  "task": "candidate entity ranking",
+  "dataset_hash": "27ca980c16f77127b7dd7b8c9cbcdbefc23a9b7ffd940a40eb315f9e13ca77c8",
+  "feature_names": [
+    "metric_max_abs_z",
+    "metric_mean_abs_z",
+    "metric_ewma_z",
+    "metric_missing",
+    "log_error_burst",
+    "log_error_rate",
+    "log_new_template",
+    "log_missing",
+    "recent_change"
+  ],
+  "selected": {
+    "index": 0,
+    "params": {
+      "hidden": [
+        16,
+        8
+      ],
+      "lr": 0.01,
+      "epochs": 180,
+      "l2": 0.001
+    },
+    "seeds": [
+      {
+        "seed": 42,
+        "path": "models\\dl_mlp-c0-s42.json",
+        "validation_mrr": 1.0,
+        "threshold": 0.9270660849544519,
+        "fit_seconds": 0.23801430000003165
+      },
+      {
+        "seed": 123,
+        "path": "models\\dl_mlp-c0-s123.json",
+        "validation_mrr": 1.0,
+        "threshold": 0.9720084229839345,
+        "fit_seconds": 0.22462299999961033
+      },
+      {
+        "seed": 2026,
+        "path": "models\\dl_mlp-c0-s2026.json",
+        "validation_mrr": 1.0,
+        "threshold": 0.9500328021070633,
+        "fit_seconds": 0.24694480000016483
+      }
+    ],
+    "validation_mrr": 1.0
+  },
+  "intended_use": "offline/shadow support",
+  "limitations": [
+    "ranking is not causal proof",
+    "statistical/unsupervised models rank abnormal entities, which can be downstream symptoms",
+    "evidence is supporting telemetry, not a neural attribution or calibrated causal probability"
+  ],
+  "lifecycle": {
+    "checks": {
+      "hit3": true,
+      "mrr": true,
+      "candidate_coverage": true,
+      "latency": true,
+      "evidence": true,
+      "failures": true
+    },
+    "decision": "DEMO_ONLY",
+    "production_allowed": false,
+    "reason": "Offline gates do not authorize production promotion"
+  }
+}

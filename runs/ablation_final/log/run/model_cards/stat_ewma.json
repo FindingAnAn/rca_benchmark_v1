@@ -1,0 +1,60 @@
+{
+  "algorithm": "stat_ewma",
+  "task": "candidate entity ranking",
+  "dataset_hash": "2f4f290521115f57c1f15d7014d7e9ab131efe2c56253626dd4cfc86039ded88",
+  "feature_names": [
+    "log_error_burst",
+    "log_error_rate",
+    "log_new_template",
+    "log_missing"
+  ],
+  "selected": {
+    "index": 0,
+    "params": {
+      "context_weight": 0.0
+    },
+    "seeds": [
+      {
+        "seed": 42,
+        "path": "models\\stat_ewma-c0-s42.json",
+        "validation_mrr": 1.0,
+        "threshold": 4.08351893845611,
+        "fit_seconds": 6.290000010267249e-05
+      },
+      {
+        "seed": 123,
+        "path": "models\\stat_ewma-c0-s123.json",
+        "validation_mrr": 1.0,
+        "threshold": 4.08351893845611,
+        "fit_seconds": 4.9500000386615284e-05
+      },
+      {
+        "seed": 2026,
+        "path": "models\\stat_ewma-c0-s2026.json",
+        "validation_mrr": 1.0,
+        "threshold": 4.08351893845611,
+        "fit_seconds": 5.2800000048591755e-05
+      }
+    ],
+    "validation_mrr": 1.0
+  },
+  "intended_use": "offline/shadow support",
+  "limitations": [
+    "ranking is not causal proof",
+    "statistical/unsupervised models rank abnormal entities, which can be downstream symptoms",
+    "evidence is supporting telemetry, not a neural attribution or calibrated causal probability"
+  ],
+  "lifecycle": {
+    "checks": {
+      "hit3": true,
+      "mrr": true,
+      "candidate_coverage": true,
+      "latency": true,
+      "evidence": true,
+      "failures": true
+    },
+    "decision": "DEMO_ONLY",
+    "production_allowed": false,
+    "reason": "Offline gates do not authorize production promotion"
+  }
+}

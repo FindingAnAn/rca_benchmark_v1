@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "sources": {
+    "metric": {
+      "input_rows": 101209,
+      "exact_duplicates": 0,
+      "accepted_rows": 101209
+    }
+  },
+  "n_cases": 90,
+  "candidate_label_coverage": 1.0
+}

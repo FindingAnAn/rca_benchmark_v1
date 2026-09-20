@@ -1,0 +1,3448 @@
+{
+  "stat_mad": {
+    "selected": {
+      "index": 0,
+      "params": {
+        "context_weight": 0.0
+      },
+      "seeds": [
+        {
+          "seed": 42,
+          "path": "models\\stat_mad-c0-s42.json",
+          "validation_mrr": 1.0,
+          "threshold": 11.4321658257577,
+          "fit_seconds": 4.910000006930204e-05
+        },
+        {
+          "seed": 123,
+          "path": "models\\stat_mad-c0-s123.json",
+          "validation_mrr": 1.0,
+          "threshold": 11.4321658257577,
+          "fit_seconds": 3.930000002583256e-05
+        },
+        {
+          "seed": 2026,
+          "path": "models\\stat_mad-c0-s2026.json",
+          "validation_mrr": 1.0,
+          "threshold": 11.4321658257577,
+          "fit_seconds": 7.74000000092201e-05
+        }
+      ],
+      "validation_mrr": 1.0
+    },
+    "aggregate": {
+      "hit1": 1.0,
+      "hit3": 1.0,
+      "hit5": 1.0,
+      "recall1": 0.9666666666666667,
+      "recall3": 1.0,
+      "recall5": 1.0,
+      "avg5": 0.9933333333333335,
+      "mrr": 1.0,
+      "map": 1.0,
+      "ndcg5": 1.0,
+      "chance_avg5": 0.375,
+      "lift_avg5": 0.6183333333333334,
+      "candidate_recall": 1.0,
+      "evidence_coverage": 1.0,
+      "mrr_seed_std": 0.0,
+      "latency_p95_ms": 0.17498500010333362
+    },
+    "per_seed": [
+      {
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.9666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9933333333333334,
+        "mrr": 1.0,
+        "map": 1.0,
+        "ndcg5": 1.0,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.6183333333333334,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.10424999982205918,
+          "95": 0.24061000010533434,
+          "99": 0.36940200022854663
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9583333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9916666666666667,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6166666666666667,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9800000000000001,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.605,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9933333333333334,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6183333333333334,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 42,
+        "threshold": 11.4321658257577,
+        "fit_seconds": 4.910000006930204e-05
+      },
+      {
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.9666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9933333333333334,
+        "mrr": 1.0,
+        "map": 1.0,
+        "ndcg5": 1.0,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.6183333333333334,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.07730000015726546,
+          "95": 0.19217999993088597,
+          "99": 0.19435599980170082
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9583333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9916666666666667,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6166666666666667,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9800000000000001,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.605,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9933333333333334,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6183333333333334,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 123,
+        "threshold": 11.4321658257577,
+        "fit_seconds": 3.930000002583256e-05
+      },
+      {
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.9666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9933333333333334,
+        "mrr": 1.0,
+        "map": 1.0,
+        "ndcg5": 1.0,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.6183333333333334,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.06619999999202264,
+          "95": 0.09216500027378051,
+          "99": 0.13643299998420833
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9583333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9916666666666667,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6166666666666667,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9800000000000001,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.605,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9933333333333334,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6183333333333334,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 2026,
+        "threshold": 11.4321658257577,
+        "fit_seconds": 7.74000000092201e-05
+      }
+    ],
+    "gate": {
+      "checks": {
+        "hit3": true,
+        "mrr": true,
+        "candidate_coverage": true,
+        "latency": true,
+        "evidence": true,
+        "failures": true
+      },
+      "decision": "DEMO_ONLY",
+      "production_allowed": false,
+      "reason": "Offline gates do not authorize production promotion"
+    }
+  },
+  "stat_ewma": {
+    "selected": {
+      "index": 0,
+      "params": {
+        "context_weight": 0.0
+      },
+      "seeds": [
+        {
+          "seed": 42,
+          "path": "models\\stat_ewma-c0-s42.json",
+          "validation_mrr": 1.0,
+          "threshold": 8.98573367429267,
+          "fit_seconds": 5.379999993238016e-05
+        },
+        {
+          "seed": 123,
+          "path": "models\\stat_ewma-c0-s123.json",
+          "validation_mrr": 1.0,
+          "threshold": 8.98573367429267,
+          "fit_seconds": 8.230000003095483e-05
+        },
+        {
+          "seed": 2026,
+          "path": "models\\stat_ewma-c0-s2026.json",
+          "validation_mrr": 1.0,
+          "threshold": 8.98573367429267,
+          "fit_seconds": 3.779999997277628e-05
+        }
+      ],
+      "validation_mrr": 1.0
+    },
+    "aggregate": {
+      "hit1": 1.0,
+      "hit3": 1.0,
+      "hit5": 1.0,
+      "recall1": 0.9666666666666667,
+      "recall3": 1.0,
+      "recall5": 1.0,
+      "avg5": 0.9933333333333335,
+      "mrr": 1.0,
+      "map": 1.0,
+      "ndcg5": 1.0,
+      "chance_avg5": 0.375,
+      "lift_avg5": 0.6183333333333334,
+      "candidate_recall": 1.0,
+      "evidence_coverage": 1.0,
+      "mrr_seed_std": 0.0,
+      "latency_p95_ms": 0.10823000017505056
+    },
+    "per_seed": [
+      {
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.9666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9933333333333334,
+        "mrr": 1.0,
+        "map": 1.0,
+        "ndcg5": 1.0,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.6183333333333334,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.07070000015119149,
+          "95": 0.10756000033325104,
+          "99": 0.12551200034977222
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9583333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9916666666666667,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6166666666666667,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9800000000000001,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.605,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9933333333333334,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6183333333333334,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 42,
+        "threshold": 8.98573367429267,
+        "fit_seconds": 5.379999993238016e-05
+      },
+      {
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.9666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9933333333333334,
+        "mrr": 1.0,
+        "map": 1.0,
+        "ndcg5": 1.0,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.6183333333333334,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.07099999993442907,
+          "95": 0.1326699999935954,
+          "99": 0.13389400003688934
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9583333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9916666666666667,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6166666666666667,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9800000000000001,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.605,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9933333333333334,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6183333333333334,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 123,
+        "threshold": 8.98573367429267,
+        "fit_seconds": 8.230000003095483e-05
+      },
+      {
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.9666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9933333333333334,
+        "mrr": 1.0,
+        "map": 1.0,
+        "ndcg5": 1.0,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.6183333333333334,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.0638999999864609,
+          "95": 0.08446000019830525,
+          "99": 0.12961200014615304
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9583333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9916666666666667,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6166666666666667,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9800000000000001,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.605,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9933333333333334,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6183333333333334,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 2026,
+        "threshold": 8.98573367429267,
+        "fit_seconds": 3.779999997277628e-05
+      }
+    ],
+    "gate": {
+      "checks": {
+        "hit3": true,
+        "mrr": true,
+        "candidate_coverage": true,
+        "latency": true,
+        "evidence": true,
+        "failures": true
+      },
+      "decision": "DEMO_ONLY",
+      "production_allowed": false,
+      "reason": "Offline gates do not authorize production promotion"
+    }
+  },
+  "ml_logistic": {
+    "selected": {
+      "index": 0,
+      "params": {
+        "lr": 0.02,
+        "epochs": 250,
+        "l2": 0.001
+      },
+      "seeds": [
+        {
+          "seed": 42,
+          "path": "models\\ml_logistic-c0-s42.json",
+          "validation_mrr": 1.0,
+          "threshold": 0.6971437187082231,
+          "fit_seconds": 0.1160688999998456
+        },
+        {
+          "seed": 123,
+          "path": "models\\ml_logistic-c0-s123.json",
+          "validation_mrr": 1.0,
+          "threshold": 0.8842599926109399,
+          "fit_seconds": 0.09578349999992497
+        },
+        {
+          "seed": 2026,
+          "path": "models\\ml_logistic-c0-s2026.json",
+          "validation_mrr": 1.0,
+          "threshold": 0.850050284507508,
+          "fit_seconds": 0.12048970000023473
+        }
+      ],
+      "validation_mrr": 1.0
+    },
+    "aggregate": {
+      "hit1": 1.0,
+      "hit3": 1.0,
+      "hit5": 1.0,
+      "recall1": 0.9666666666666667,
+      "recall3": 1.0,
+      "recall5": 1.0,
+      "avg5": 0.9933333333333335,
+      "mrr": 1.0,
+      "map": 1.0,
+      "ndcg5": 1.0,
+      "chance_avg5": 0.375,
+      "lift_avg5": 0.6183333333333334,
+      "candidate_recall": 1.0,
+      "evidence_coverage": 1.0,
+      "mrr_seed_std": 0.0,
+      "latency_p95_ms": 0.13284166658801635
+    },
+    "per_seed": [
+      {
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.9666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9933333333333334,
+        "mrr": 1.0,
+        "map": 1.0,
+        "ndcg5": 1.0,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.6183333333333334,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.09235000015905825,
+          "95": 0.1310449999436968,
+          "99": 0.1747690001502632
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9583333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9916666666666667,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6166666666666667,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9800000000000001,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.605,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9933333333333334,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6183333333333334,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 42,
+        "threshold": 0.6971437187082231,
+        "fit_seconds": 0.1160688999998456
+      },
+      {
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.9666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9933333333333334,
+        "mrr": 1.0,
+        "map": 1.0,
+        "ndcg5": 1.0,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.6183333333333334,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.10365000002821034,
+          "95": 0.1362599998401491,
+          "99": 0.19773200005602104
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9583333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9916666666666667,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6166666666666667,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9800000000000001,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.605,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9933333333333334,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6183333333333334,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 123,
+        "threshold": 0.8842599926109399,
+        "fit_seconds": 0.09578349999992497
+      },
+      {
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.9666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9933333333333334,
+        "mrr": 1.0,
+        "map": 1.0,
+        "ndcg5": 1.0,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.6183333333333334,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.09309999995821272,
+          "95": 0.13121999998020314,
+          "99": 0.198403999779657
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9583333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9916666666666667,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6166666666666667,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9800000000000001,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.605,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9933333333333334,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6183333333333334,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 2026,
+        "threshold": 0.850050284507508,
+        "fit_seconds": 0.12048970000023473
+      }
+    ],
+    "gate": {
+      "checks": {
+        "hit3": true,
+        "mrr": true,
+        "candidate_coverage": true,
+        "latency": true,
+        "evidence": true,
+        "failures": true
+      },
+      "decision": "DEMO_ONLY",
+      "production_allowed": false,
+      "reason": "Offline gates do not authorize production promotion"
+    }
+  },
+  "ml_pca": {
+    "selected": {
+      "index": 0,
+      "params": {
+        "components": 2
+      },
+      "seeds": [
+        {
+          "seed": 42,
+          "path": "models\\ml_pca-c0-s42.json",
+          "validation_mrr": 0.7857142857142857,
+          "threshold": 4.803440645493216,
+          "fit_seconds": 0.00037130000009710784
+        },
+        {
+          "seed": 123,
+          "path": "models\\ml_pca-c0-s123.json",
+          "validation_mrr": 0.7857142857142857,
+          "threshold": 4.803440645493216,
+          "fit_seconds": 0.00030900000001565786
+        },
+        {
+          "seed": 2026,
+          "path": "models\\ml_pca-c0-s2026.json",
+          "validation_mrr": 0.7857142857142857,
+          "threshold": 4.803440645493216,
+          "fit_seconds": 0.0005524999996850966
+        }
+      ],
+      "validation_mrr": 0.7857142857142857
+    },
+    "aggregate": {
+      "hit1": 0.6,
+      "hit3": 1.0,
+      "hit5": 1.0,
+      "recall1": 0.5666666666666667,
+      "recall3": 1.0,
+      "recall5": 1.0,
+      "avg5": 0.9133333333333334,
+      "mrr": 0.8000000000000002,
+      "map": 0.8000000000000002,
+      "ndcg5": 0.8523719014285831,
+      "chance_avg5": 0.375,
+      "lift_avg5": 0.5383333333333333,
+      "candidate_recall": 1.0,
+      "evidence_coverage": 1.0,
+      "mrr_seed_std": 1.1102230246251565e-16,
+      "latency_p95_ms": 0.16002499981671756
+    },
+    "per_seed": [
+      {
+        "hit1": 0.6,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.5666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9133333333333334,
+        "mrr": 0.8,
+        "map": 0.8,
+        "ndcg5": 0.8523719014285831,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.5383333333333333,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.10555000017120619,
+          "95": 0.2426699997613468,
+          "99": 0.265653999749702
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 0.7,
+          "upper": 0.9333333333333333,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 0.6666666666666666,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.625,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9250000000000002,
+              "mrr": 0.8333333333333334,
+              "map": 0.8333333333333334,
+              "ndcg5": 0.8769765845238192,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5499999999999999,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 0.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.8,
+              "mrr": 0.5,
+              "map": 0.5,
+              "ndcg5": 0.6309297535714575,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.42500000000000004,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 0.8,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.8,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.96,
+              "mrr": 0.9,
+              "map": 0.9,
+              "ndcg5": 0.9261859507142916,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.585,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 0.8,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.7,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9400000000000001,
+              "mrr": 0.9,
+              "map": 0.9,
+              "ndcg5": 0.9261859507142916,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5650000000000001,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 0.2,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.2,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.8400000000000001,
+              "mrr": 0.6,
+              "map": 0.6,
+              "ndcg5": 0.704743802857166,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.465,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 0.6,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.5666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9133333333333334,
+              "mrr": 0.8,
+              "map": 0.8,
+              "ndcg5": 0.8523719014285831,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5383333333333333,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 42,
+        "threshold": 4.803440645493216,
+        "fit_seconds": 0.00037130000009710784
+      },
+      {
+        "hit1": 0.6,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.5666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9133333333333334,
+        "mrr": 0.8,
+        "map": 0.8,
+        "ndcg5": 0.8523719014285831,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.5383333333333333,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.08574999992561061,
+          "95": 0.11818999976185281,
+          "99": 0.1920380002093223
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 0.7,
+          "upper": 0.9333333333333333,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 0.6666666666666666,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.625,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9250000000000002,
+              "mrr": 0.8333333333333334,
+              "map": 0.8333333333333334,
+              "ndcg5": 0.8769765845238192,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5499999999999999,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 0.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.8,
+              "mrr": 0.5,
+              "map": 0.5,
+              "ndcg5": 0.6309297535714575,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.42500000000000004,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 0.8,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.8,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.96,
+              "mrr": 0.9,
+              "map": 0.9,
+              "ndcg5": 0.9261859507142916,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.585,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 0.8,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.7,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9400000000000001,
+              "mrr": 0.9,
+              "map": 0.9,
+              "ndcg5": 0.9261859507142916,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5650000000000001,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 0.2,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.2,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.8400000000000001,
+              "mrr": 0.6,
+              "map": 0.6,
+              "ndcg5": 0.704743802857166,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.465,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 0.6,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.5666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9133333333333334,
+              "mrr": 0.8,
+              "map": 0.8,
+              "ndcg5": 0.8523719014285831,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5383333333333333,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 123,
+        "threshold": 4.803440645493216,
+        "fit_seconds": 0.00030900000001565786
+      },
+      {
+        "hit1": 0.6,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.5666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9133333333333334,
+        "mrr": 0.8,
+        "map": 0.8,
+        "ndcg5": 0.8523719014285831,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.5383333333333333,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.08600000001024455,
+          "95": 0.11921499992695303,
+          "99": 0.1845629999706942
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 0.7,
+          "upper": 0.9333333333333333,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 0.6666666666666666,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.625,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9250000000000002,
+              "mrr": 0.8333333333333334,
+              "map": 0.8333333333333334,
+              "ndcg5": 0.8769765845238192,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5499999999999999,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 0.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.8,
+              "mrr": 0.5,
+              "map": 0.5,
+              "ndcg5": 0.6309297535714575,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.42500000000000004,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 0.8,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.8,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.96,
+              "mrr": 0.9,
+              "map": 0.9,
+              "ndcg5": 0.9261859507142916,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.585,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 0.8,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.7,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9400000000000001,
+              "mrr": 0.9,
+              "map": 0.9,
+              "ndcg5": 0.9261859507142916,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5650000000000001,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 0.2,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.2,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.8400000000000001,
+              "mrr": 0.6,
+              "map": 0.6,
+              "ndcg5": 0.704743802857166,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.465,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 0.6,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.5666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9133333333333334,
+              "mrr": 0.8,
+              "map": 0.8,
+              "ndcg5": 0.8523719014285831,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5383333333333333,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 2026,
+        "threshold": 4.803440645493216,
+        "fit_seconds": 0.0005524999996850966
+      }
+    ],
+    "gate": {
+      "checks": {
+        "hit3": true,
+        "mrr": true,
+        "candidate_coverage": true,
+        "latency": true,
+        "evidence": true,
+        "failures": true
+      },
+      "decision": "DEMO_ONLY",
+      "production_allowed": false,
+      "reason": "Offline gates do not authorize production promotion"
+    }
+  },
+  "dl_mlp": {
+    "selected": {
+      "index": 0,
+      "params": {
+        "hidden": [
+          16,
+          8
+        ],
+        "lr": 0.01,
+        "epochs": 180,
+        "l2": 0.001
+      },
+      "seeds": [
+        {
+          "seed": 42,
+          "path": "models\\dl_mlp-c0-s42.json",
+          "validation_mrr": 1.0,
+          "threshold": 0.9394710584279536,
+          "fit_seconds": 0.22177769999962038
+        },
+        {
+          "seed": 123,
+          "path": "models\\dl_mlp-c0-s123.json",
+          "validation_mrr": 1.0,
+          "threshold": 0.934581438984359,
+          "fit_seconds": 0.22443079999993643
+        },
+        {
+          "seed": 2026,
+          "path": "models\\dl_mlp-c0-s2026.json",
+          "validation_mrr": 1.0,
+          "threshold": 0.9538489247871335,
+          "fit_seconds": 0.21625219999987166
+        }
+      ],
+      "validation_mrr": 1.0
+    },
+    "aggregate": {
+      "hit1": 1.0,
+      "hit3": 1.0,
+      "hit5": 1.0,
+      "recall1": 0.9666666666666667,
+      "recall3": 1.0,
+      "recall5": 1.0,
+      "avg5": 0.9933333333333335,
+      "mrr": 1.0,
+      "map": 1.0,
+      "ndcg5": 1.0,
+      "chance_avg5": 0.375,
+      "lift_avg5": 0.6183333333333334,
+      "candidate_recall": 1.0,
+      "evidence_coverage": 1.0,
+      "mrr_seed_std": 0.0,
+      "latency_p95_ms": 0.16743833349816348
+    },
+    "per_seed": [
+      {
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.9666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9933333333333334,
+        "mrr": 1.0,
+        "map": 1.0,
+        "ndcg5": 1.0,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.6183333333333334,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.1085999999759224,
+          "95": 0.17598000033558459,
+          "99": 0.34135600010358713
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9583333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9916666666666667,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6166666666666667,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9800000000000001,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.605,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9933333333333334,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6183333333333334,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 42,
+        "threshold": 0.9394710584279536,
+        "fit_seconds": 0.22177769999962038
+      },
+      {
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.9666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9933333333333334,
+        "mrr": 1.0,
+        "map": 1.0,
+        "ndcg5": 1.0,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.6183333333333334,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.12360000027911155,
+          "95": 0.18906500017692446,
+          "99": 0.21973299992168896
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9583333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9916666666666667,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6166666666666667,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9800000000000001,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.605,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9933333333333334,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6183333333333334,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 123,
+        "threshold": 0.934581438984359,
+        "fit_seconds": 0.22443079999993643
+      },
+      {
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.9666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9933333333333334,
+        "mrr": 1.0,
+        "map": 1.0,
+        "ndcg5": 1.0,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.6183333333333334,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.11044999973819358,
+          "95": 0.1372699999819814,
+          "99": 0.19969400002537424
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9583333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9916666666666667,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6166666666666667,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9800000000000001,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.605,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9933333333333334,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6183333333333334,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 2026,
+        "threshold": 0.9538489247871335,
+        "fit_seconds": 0.21625219999987166
+      }
+    ],
+    "gate": {
+      "checks": {
+        "hit3": true,
+        "mrr": true,
+        "candidate_coverage": true,
+        "latency": true,
+        "evidence": true,
+        "failures": true
+      },
+      "decision": "DEMO_ONLY",
+      "production_allowed": false,
+      "reason": "Offline gates do not authorize production promotion"
+    }
+  },
+  "dl_autoencoder": {
+    "selected": {
+      "index": 0,
+      "params": {
+        "hidden": [
+          16,
+          4,
+          16
+        ],
+        "lr": 0.005,
+        "epochs": 180
+      },
+      "seeds": [
+        {
+          "seed": 42,
+          "path": "models\\dl_autoencoder-c0-s42.json",
+          "validation_mrr": 0.9285714285714286,
+          "threshold": 82.03594861894064,
+          "fit_seconds": 0.2364956000001257
+        },
+        {
+          "seed": 123,
+          "path": "models\\dl_autoencoder-c0-s123.json",
+          "validation_mrr": 0.9285714285714286,
+          "threshold": 84.38186386432997,
+          "fit_seconds": 0.20074569999997038
+        },
+        {
+          "seed": 2026,
+          "path": "models\\dl_autoencoder-c0-s2026.json",
+          "validation_mrr": 0.9285714285714286,
+          "threshold": 91.79573239141457,
+          "fit_seconds": 0.20225490000029822
+        }
+      ],
+      "validation_mrr": 0.9285714285714285
+    },
+    "aggregate": {
+      "hit1": 0.8666666666666667,
+      "hit3": 1.0,
+      "hit5": 1.0,
+      "recall1": 0.8333333333333334,
+      "recall3": 1.0,
+      "recall5": 1.0,
+      "avg5": 0.9666666666666668,
+      "mrr": 0.9333333333333335,
+      "map": 0.9333333333333335,
+      "ndcg5": 0.9507906338095277,
+      "chance_avg5": 0.375,
+      "lift_avg5": 0.5916666666666667,
+      "candidate_recall": 1.0,
+      "evidence_coverage": 1.0,
+      "mrr_seed_std": 0.02721655269759086,
+      "latency_p95_ms": 0.24662999987867792
+    },
+    "per_seed": [
+      {
+        "hit1": 0.8,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.7666666666666667,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9533333333333334,
+        "mrr": 0.9,
+        "map": 0.9,
+        "ndcg5": 0.9261859507142916,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.5783333333333334,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.1148500000454078,
+          "95": 0.14985499992690152,
+          "99": 0.2203710000503632
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 0.8,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 0.75,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.7083333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9416666666666668,
+              "mrr": 0.875,
+              "map": 0.875,
+              "ndcg5": 0.9077324383928644,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5666666666666667,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 0.8,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.8,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.96,
+              "mrr": 0.9,
+              "map": 0.9,
+              "ndcg5": 0.9261859507142916,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.585,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 0.8,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.7,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9400000000000001,
+              "mrr": 0.9,
+              "map": 0.9,
+              "ndcg5": 0.9261859507142916,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5650000000000001,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 0.8,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.8,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.96,
+              "mrr": 0.9,
+              "map": 0.9,
+              "ndcg5": 0.9261859507142916,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.585,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 0.8,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.7666666666666667,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9533333333333334,
+              "mrr": 0.9,
+              "map": 0.9,
+              "ndcg5": 0.9261859507142916,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5783333333333334,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 42,
+        "threshold": 82.03594861894064,
+        "fit_seconds": 0.2364956000001257
+      },
+      {
+        "hit1": 0.8666666666666667,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.8333333333333334,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9666666666666668,
+        "mrr": 0.9333333333333333,
+        "map": 0.9333333333333333,
+        "ndcg5": 0.9507906338095277,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.5916666666666667,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.13704999992114608,
+          "95": 0.2431549997254476,
+          "99": 0.3639910001857058
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 0.8333333333333334,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 0.8333333333333334,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.7916666666666666,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9583333333333335,
+              "mrr": 0.9166666666666666,
+              "map": 0.9166666666666666,
+              "ndcg5": 0.9384882922619097,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5833333333333334,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 0.8,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.8,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.96,
+              "mrr": 0.9,
+              "map": 0.9,
+              "ndcg5": 0.9261859507142916,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.585,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 0.8,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.7,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9400000000000001,
+              "mrr": 0.9,
+              "map": 0.9,
+              "ndcg5": 0.9261859507142916,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5650000000000001,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 0.8666666666666667,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.8333333333333334,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9666666666666668,
+              "mrr": 0.9333333333333333,
+              "map": 0.9333333333333333,
+              "ndcg5": 0.9507906338095277,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5916666666666667,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 123,
+        "threshold": 84.38186386432997,
+        "fit_seconds": 0.20074569999997038
+      },
+      {
+        "hit1": 0.9333333333333333,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "recall1": 0.9,
+        "recall3": 1.0,
+        "recall5": 1.0,
+        "avg5": 0.9800000000000001,
+        "mrr": 0.9666666666666667,
+        "map": 0.9666666666666667,
+        "ndcg5": 0.9753953169047639,
+        "chance_avg5": 0.375,
+        "lift_avg5": 0.605,
+        "candidate_recall": 1.0,
+        "n_cases": 18,
+        "n_incidents": 15,
+        "failures": 0,
+        "latency_ms": {
+          "50": 0.14874999988023774,
+          "95": 0.34687999998368463,
+          "99": 0.37081600010878896
+        },
+        "evidence_coverage": 1.0,
+        "mrr_ci95": {
+          "lower": 0.9,
+          "upper": 1.0,
+          "method": "percentile group bootstrap",
+          "n_groups": 15
+        },
+        "detection": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "ap": 0.9999999999999999,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "n_windows": 18,
+          "scope": "sampled incident/control windows; not continuous event detection",
+          "false_alarms_per_hour": null,
+          "detection_delay_seconds": null
+        },
+        "slices": {
+          "domain": {
+            "Core": {
+              "n_cases": 13,
+              "hit1": 0.9166666666666666,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.875,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9750000000000001,
+              "mrr": 0.9583333333333334,
+              "map": 0.9583333333333334,
+              "ndcg5": 0.9692441461309548,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.6,
+              "candidate_recall": 1.0
+            },
+            "MANO": {
+              "n_cases": 2,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "OCS": {
+              "n_cases": 3,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            }
+          },
+          "fault_type": {
+            "config": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "cpu": {
+              "n_cases": 5,
+              "hit1": 0.8,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.7,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9400000000000001,
+              "mrr": 0.9,
+              "map": 0.9,
+              "ndcg5": 0.9261859507142916,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.5650000000000001,
+              "candidate_recall": 1.0
+            },
+            "network": {
+              "n_cases": 5,
+              "hit1": 1.0,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 1.0,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 1.0,
+              "mrr": 1.0,
+              "map": 1.0,
+              "ndcg5": 1.0,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.625,
+              "candidate_recall": 1.0
+            },
+            "normal": {
+              "n_cases": 3
+            }
+          },
+          "release": {
+            "r3": {
+              "n_cases": 18,
+              "hit1": 0.9333333333333333,
+              "hit3": 1.0,
+              "hit5": 1.0,
+              "recall1": 0.9,
+              "recall3": 1.0,
+              "recall5": 1.0,
+              "avg5": 0.9800000000000001,
+              "mrr": 0.9666666666666667,
+              "map": 0.9666666666666667,
+              "ndcg5": 0.9753953169047639,
+              "chance_avg5": 0.375,
+              "lift_avg5": 0.605,
+              "candidate_recall": 1.0
+            }
+          }
+        },
+        "seed": 2026,
+        "threshold": 91.79573239141457,
+        "fit_seconds": 0.20225490000029822
+      }
+    ],
+    "gate": {
+      "checks": {
+        "hit3": true,
+        "mrr": true,
+        "candidate_coverage": true,
+        "latency": true,
+        "evidence": true,
+        "failures": true
+      },
+      "decision": "DEMO_ONLY",
+      "production_allowed": false,
+      "reason": "Offline gates do not authorize production promotion"
+    }
+  }
+}

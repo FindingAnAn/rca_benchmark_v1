@@ -1,0 +1,15 @@
+{
+  "stage": "raw",
+  "dataset_version": "telecom-synthetic-1.0.0",
+  "synthetic": true,
+  "files": {
+    "changes.jsonl": "bb49d8322c430f517e45de865b47f8a23c06f96ebe74ee218f08ee0012a7cabb",
+    "incidents.jsonl": "68e70ce1a6b73a6219b78d2dd75726f2825242762abdc6544c68789e787dada8",
+    "logs.jsonl": "f6706c248f0225409e856192bc738f7f523ab34f998fe92ed44878501c9bd07b",
+    "metrics.csv": "73bba3ffa4213a295ba392f641a2a0f35397fa6b140fd389cc08c7fb8824d0b2",
+    "source.json": "a345f00d6dcdc22c6dd45badb260dfbb75b12f350240c4e4b9f7ea68ef5861a9",
+    "topology.jsonl": "6a82d907dd1399b4a009a60241f9d23afc858d3c143f8300a307b1b1e7b45b23"
+  },
+  "content_hash": "3cf24119938b81d5975206d364d6f604e880a5e3a47459d920113355261de734",
+  "created_at": "2026-09-20T17:17:26.819095+00:00"
+}

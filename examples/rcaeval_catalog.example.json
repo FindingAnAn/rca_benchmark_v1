@@ -1,0 +1,37 @@
+{
+  "dataset_version": "rcaeval-metric-subset-0.1.0",
+  "upstream_ref": "bb48c5aa9a24f1d5fcc716bdd479ea2d63145c90",
+  "cases": [
+    {
+      "metrics_file": "REPLACE_WITH_DOWNLOADED_METRICS.csv",
+      "time_column": "time",
+      "column_to_entity": {
+        "service_a_cpu": "service_a",
+        "service_b_cpu": "service_b"
+      },
+      "case": {
+        "incident_id": "re1-example",
+        "group_id": "REPLACE_WITH_REPETITION_CAMPAIGN",
+        "t0": 1767225600,
+        "detected_at": 1767225660,
+        "cutoff": 1767226260,
+        "candidates": [
+          "service_a",
+          "service_b"
+        ],
+        "root_entities": [
+          "service_a"
+        ],
+        "is_incident": true,
+        "domain": "public-microservice",
+        "fault_type": "db",
+        "release": "r1",
+        "label_tier": "gold",
+        "label_source": "REPLACE_WITH_PUBLIC_GROUND_TRUTH",
+        "label_available_at": 1767312000,
+        "availability_mode": "retrospective",
+        "log_coverage_complete": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "stat_ewma",
+  "params": {
+    "context_weight": 0.3
+  },
+  "seed": 123,
+  "feature_names": [
+    "metric_max_abs_z",
+    "metric_mean_abs_z",
+    "metric_ewma_z",
+    "metric_missing",
+    "log_error_burst",
+    "log_error_rate",
+    "log_new_template",
+    "log_missing",
+    "recent_change"
+  ],
+  "loss_history": [],
+  "state": {}
+}

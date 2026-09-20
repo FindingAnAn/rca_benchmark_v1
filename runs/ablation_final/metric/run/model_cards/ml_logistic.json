@@ -1,0 +1,62 @@
+{
+  "algorithm": "ml_logistic",
+  "task": "candidate entity ranking",
+  "dataset_hash": "4d653d0191ced6b036e3666610dce2729bd7638c6524d3c57208110ac43c6211",
+  "feature_names": [
+    "metric_max_abs_z",
+    "metric_mean_abs_z",
+    "metric_ewma_z",
+    "metric_missing"
+  ],
+  "selected": {
+    "index": 0,
+    "params": {
+      "lr": 0.02,
+      "epochs": 250,
+      "l2": 0.001
+    },
+    "seeds": [
+      {
+        "seed": 42,
+        "path": "models\\ml_logistic-c0-s42.json",
+        "validation_mrr": 0.8571428571428571,
+        "threshold": 0.6367540338468407,
+        "fit_seconds": 0.10191070000018954
+      },
+      {
+        "seed": 123,
+        "path": "models\\ml_logistic-c0-s123.json",
+        "validation_mrr": 0.9285714285714286,
+        "threshold": 0.6673850607585332,
+        "fit_seconds": 0.10350520000019969
+      },
+      {
+        "seed": 2026,
+        "path": "models\\ml_logistic-c0-s2026.json",
+        "validation_mrr": 0.9285714285714286,
+        "threshold": 0.6514991799657568,
+        "fit_seconds": 0.1274634999999762
+      }
+    ],
+    "validation_mrr": 0.9047619047619048
+  },
+  "intended_use": "offline/shadow support",
+  "limitations": [
+    "ranking is not causal proof",
+    "statistical/unsupervised models rank abnormal entities, which can be downstream symptoms",
+    "evidence is supporting telemetry, not a neural attribution or calibrated causal probability"
+  ],
+  "lifecycle": {
+    "checks": {
+      "hit3": true,
+      "mrr": true,
+      "candidate_coverage": true,
+      "latency": true,
+      "evidence": true,
+      "failures": true
+    },
+    "decision": "DEMO_ONLY",
+    "production_allowed": false,
+    "reason": "Offline gates do not authorize production promotion"
+  }
+}

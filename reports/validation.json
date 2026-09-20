@@ -1,0 +1,13 @@
+{
+  "unit_and_integration_tests": true,
+  "tests_run": 19,
+  "verified_snapshots": 7,
+  "verified_runs": 6,
+  "notebook_code_cells": "PASS",
+  "ablation_rows": 30,
+  "verified_at": "2026-09-20T17:30:20.825714+00:00",
+  "live_VM_ES_verified": false,
+  "official_RCAEval_methods_executed": false,
+  "production_readiness": false,
+  "local_links_verified": 31
+}

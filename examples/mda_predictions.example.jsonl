@@ -1,0 +1,1 @@
+{"evidence":["REPLACE_WITH_ALARM_REF"],"incident_id":"incident-example","observation_cutoff":1767226260,"ranks":["aerospike-db","ocs-service","node-01"],"rule_version":"REPLACE_WITH_RULE_VERSION"}

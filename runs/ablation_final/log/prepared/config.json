@@ -1,0 +1,109 @@
+{
+  "dataset_version": "telecom-synthetic-1.0.0",
+  "feature_version": "incident-candidate-v1",
+  "seed": 42,
+  "n_cases": 90,
+  "step_seconds": 60,
+  "pre_seconds": 3600,
+  "post_seconds": 600,
+  "train_fraction": 0.6,
+  "validation_fraction": 0.2,
+  "embargo_seconds": 60,
+  "min_metric_coverage": 0.7,
+  "label_tiers": [
+    "synthetic"
+  ],
+  "modalities": [
+    "log"
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "bootstrap_samples": 300,
+  "algorithms": {
+    "stat_mad": [
+      {
+        "context_weight": 0.0
+      },
+      {
+        "context_weight": 0.3
+      }
+    ],
+    "stat_ewma": [
+      {
+        "context_weight": 0.0
+      },
+      {
+        "context_weight": 0.3
+      }
+    ],
+    "ml_logistic": [
+      {
+        "lr": 0.02,
+        "epochs": 250,
+        "l2": 0.001
+      },
+      {
+        "lr": 0.02,
+        "epochs": 250,
+        "l2": 0.03
+      }
+    ],
+    "ml_pca": [
+      {
+        "components": 2
+      },
+      {
+        "components": 4
+      }
+    ],
+    "dl_mlp": [
+      {
+        "hidden": [
+          16,
+          8
+        ],
+        "lr": 0.01,
+        "epochs": 180,
+        "l2": 0.001
+      },
+      {
+        "hidden": [
+          32,
+          16
+        ],
+        "lr": 0.005,
+        "epochs": 180,
+        "l2": 0.01
+      }
+    ],
+    "dl_autoencoder": [
+      {
+        "hidden": [
+          16,
+          4,
+          16
+        ],
+        "lr": 0.005,
+        "epochs": 180
+      },
+      {
+        "hidden": [
+          24,
+          8,
+          24
+        ],
+        "lr": 0.005,
+        "epochs": 180
+      }
+    ]
+  },
+  "gates": {
+    "min_hit3": 0.7,
+    "min_mrr": 0.5,
+    "max_p95_ms": 1000.0,
+    "min_evidence_coverage": 0.95
+  }
+}

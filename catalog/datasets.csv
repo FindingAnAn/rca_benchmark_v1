@@ -1,0 +1,7 @@
+﻿dataset,modality,target,status,source
+RCAEval RE1,metric,service/indicator,metric importer,https://github.com/phamquiluan/RCAEval
+RCAEval RE2/RE3,metric/log/trace depending system,service/indicator,metric importer; log/trace roadmap,https://github.com/phamquiluan/RCAEval
+AIOps 2020,"business/platform metrics, traces",fault time/type/location,survey,https://github.com/NetManAIOps/AIOps-Challenge-2020-Data
+LogHub,log,anomaly labels depend on subset,survey,https://github.com/logpai/loghub
+Internal Gold,VM/ES/LCM/topology,SME-confirmed root entity,contract ready; awaiting exports,local PL03 and operational tickets
+Telecom synthetic,metric/log/change/topology,injected entity,executed demo,rca_bench/synthetic.py

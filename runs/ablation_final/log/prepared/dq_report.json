@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "sources": {
+    "log": {
+      "input_rows": 10493,
+      "exact_duplicates": 0,
+      "accepted_rows": 10493
+    }
+  },
+  "n_cases": 90,
+  "candidate_label_coverage": 1.0
+}

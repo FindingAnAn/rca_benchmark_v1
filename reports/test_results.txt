@@ -1,0 +1,24 @@
+test_es_partial_response_rejected_and_pit_closed (test_benchmark.ConnectorTests.test_es_partial_response_rejected_and_pit_closed) ... ok
+test_es_pit_rotation_pagination_and_cleanup (test_benchmark.ConnectorTests.test_es_pit_rotation_pagination_and_cleanup) ... ok
+test_vm_chunks_do_not_drop_or_duplicate_boundary (test_benchmark.ConnectorTests.test_vm_chunks_do_not_drop_or_duplicate_boundary) ... ok
+test_checksum_rejects_mutation (test_benchmark.DataTests.test_checksum_rejects_mutation) ... ok
+test_exact_duplicate_and_conflict (test_benchmark.DataTests.test_exact_duplicate_and_conflict) ... ok
+test_future_and_late_data_not_features (test_benchmark.DataTests.test_future_and_late_data_not_features) ... ok
+test_label_change_does_not_change_features (test_benchmark.DataTests.test_label_change_does_not_change_features) ... ok
+test_split_rejects_overlap_and_delayed_labels (test_benchmark.DataTests.test_split_rejects_overlap_and_delayed_labels) ... ok
+test_drift_identical_data_is_zero (test_benchmark.EndToEndTests.test_drift_identical_data_is_zero) ... ok
+test_external_baseline_in_full_report (test_benchmark.EndToEndTests.test_external_baseline_in_full_report) ... ok
+test_failed_training_persists_status (test_benchmark.EndToEndTests.test_failed_training_persists_status) ... ok
+test_pipeline_all_tracks_and_external_failures (test_benchmark.EndToEndTests.test_pipeline_all_tracks_and_external_failures) ... ok
+test_rcaeval_import_keeps_explicit_entity_mapping (test_benchmark.EndToEndTests.test_rcaeval_import_keeps_explicit_entity_mapping) ... ok
+test_empty_failed_prediction_is_zero (test_benchmark.MetricsTests.test_empty_failed_prediction_is_zero) ... ok
+test_multiroot_not_hit_equals_recall (test_benchmark.MetricsTests.test_multiroot_not_hit_equals_recall) ... ok
+test_single_root_and_random_floor (test_benchmark.MetricsTests.test_single_root_and_random_floor) ... ok
+test_threshold_requires_controls (test_benchmark.MetricsTests.test_threshold_requires_controls) ... ok
+test_tied_ap_is_not_order_dependent (test_benchmark.MetricsTests.test_tied_ap_is_not_order_dependent) ... ok
+test_training_serialization_and_determinism (test_benchmark.ModelsTests.test_training_serialization_and_determinism) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 3.246s
+
+OK
